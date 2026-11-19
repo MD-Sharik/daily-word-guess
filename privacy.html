@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy - Daily Word Guess</title>
-<meta name="description" content="Privacy policy for the Daily Word Guess Android app: no accounts, no ads, no analytics. Statistics stay on your device; the daily word is requested from a third-party service.">
+<meta name="description" content="Privacy policy for the Daily Word Guess Android app: no accounts, no analytics, one small banner ad served by Google AdMob. Statistics stay on your device; the daily word is requested from a third-party service.">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="canonical" href="https://md-sharik.github.io/daily-word-guess/privacy.html">
@@ -21,13 +21,13 @@
 <h1>Privacy Policy</h1>
 <p class="meta">Effective date: 19 November 2026 &middot; Applies to the Android app &ldquo;Daily Word Guess&rdquo; (package <code>com.dailywordguess.game</code>) and this website.</p>
 
-<div class="box"><strong>In short:</strong> the app has no accounts, no ads and no analytics. Your settings and statistics stay on your device. The only thing the app sends over the internet is one request per day to a third-party service to get the daily word, and that service can see your IP address.</div>
+<div class="box"><strong>In short:</strong> the app has no accounts and no analytics of our own. Your settings and statistics stay on your device. The app shows one small banner ad served by Google AdMob, and asks a third-party service for the daily word once a day. Both of those services can see your IP address.</div>
 
 <h2>1. Who we are</h2>
-<p>Daily Word Guess is published by an independent developer (&ldquo;we&rdquo;, &ldquo;us&rdquo;). You can reach us at <a href="mailto:md.sharik5012@gmail.com">md.sharik5012@gmail.com</a>.</p>
+<p>Daily Word Guess is published by an independent developer (&ldquo;we&rdquo;, &ldquo;us&rdquo;). You can reach us at <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>.</p>
 
 <h2>2. What we collect</h2>
-<p><strong>We do not collect personal information.</strong> There is no sign-up or login, and the app asks for no personal details. We do not run a server that receives data from the app, and we do not use advertising, analytics, crash-reporting or tracking software of our own.</p>
+<p><strong>We do not collect personal information.</strong> There is no sign-up or login, and the app asks for no personal details. We do not run a server that receives data from the app, and we do not use analytics, crash-reporting or tracking software of our own. The only third-party code in the app is the Google AdMob advertising SDK, described in section 5.</p>
 
 <h2>3. What is stored on your device</h2>
 <p>The app saves the following only in its private storage on your phone:</p>
@@ -43,38 +43,44 @@
 <p>To get the word of the day, the app makes a secure (HTTPS) request to a third-party word service at <code>wordlehintstoday.org</code>. The request is made at most once per day, when you open the app and no word for today has been cached yet. The app sends no account, advertising or device identifiers and no game data in this request.</p>
 <p>As with any internet request, the operator of that service can see your <strong>IP address</strong> and the standard technical details of the request (such as the time and the app's user-agent string, <code>DailyWordGuess/1.0</code>). We do not control that service, do not receive that information, and cannot speak for how the operator handles it; please refer to the operator's own privacy information. If the service cannot be reached or returns something the app cannot use, the app falls back to a word built into the app and makes no further request until the next time you open it.</p>
 
-<h2>5. Google Play</h2>
+<h2>5. Advertising (Google AdMob)</h2>
+<p>The app shows <strong>one small banner ad at the bottom of the screen</strong>, served by Google AdMob. There are no full-screen, video or rewarded ads. To request and show an ad, the Google Mobile Ads SDK in the app sends information to Google, which may include your <strong>IP address, device and operating-system information, an advertising identifier (the Android Advertising ID, if you have not reset or deleted it), approximate location derived from your IP address, and ad-interaction and diagnostic data</strong>. Google uses this to serve and measure ads, and may use it for personalised ads where you have agreed to that. We do not receive this data about you; Google acts under its own privacy policy (<a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>) and describes how it uses data from apps at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+<p><strong>Your choices.</strong> In the European Economic Area, the UK and some other regions, the app shows Google's consent form on first launch, and you can change your choice later from <em>Settings &rarr; Ad privacy settings</em> where that option appears. On Android you can reset your advertising ID or opt out of ad personalisation in <em>Settings &rarr; Google &rarr; Ads</em>. Because the ads are served by Google, the daily-word request in section 4 and the ad request are the only network traffic the app generates.</p>
+
+<h2>6. Google Play</h2>
 <p>If you install the app from Google Play, Google processes information about your installation and device under Google's own terms and privacy policy. Google may provide us with aggregated statistics (for example install counts) and, if you have chosen to share usage and diagnostics data on your device, anonymised crash or performance reports in the Play Console. We do not receive your name, email address or any other direct identifier through this.</p>
 
-<h2>6. Permissions</h2>
+<h2>7. Permissions</h2>
 <table>
   <thead><tr><th>Permission</th><th>Why</th></tr></thead>
   <tbody>
-    <tr><td>INTERNET</td><td>To request the daily word (section 4). Nothing else uses the network.</td></tr>
+    <tr><td>INTERNET</td><td>To request the daily word (section 4) and to load the banner ad (section 5).</td></tr>
+    <tr><td>ACCESS_NETWORK_STATE</td><td>Used by the advertising SDK to check whether a connection is available.</td></tr>
+    <tr><td>AD_ID (Google Play services)</td><td>Lets the advertising SDK read the Android Advertising ID to serve and measure ads.</td></tr>
   </tbody>
 </table>
 <p>The app does not request access to your location, contacts, camera, microphone, photos or files. The &ldquo;Share&rdquo; button copies your result as text to the clipboard; the app never reads the clipboard.</p>
 
-<h2>7. Children</h2>
-<p>Daily Word Guess is a general-audience word game and is <strong>not directed to children under 13</strong>. We do not knowingly collect personal information from anyone, including children under 13. Because the app has no accounts or advertising, there is no personal information to collect or remove.</p>
+<h2>8. Children</h2>
+<p>Daily Word Guess is a general-audience word game and is <strong>not directed to children under 13</strong>. We do not knowingly collect personal information from anyone, including children under 13. We do not ask for ages or accounts. The app asks Google to serve ads suitable for general audiences, and does not intentionally show personalised ads to children.</p>
 
-<h2>8. Sharing and selling</h2>
-<p>We do not sell, rent or share personal information, because we do not collect any. The only third party that receives anything from the app is the word service described in section 4.</p>
+<h2>9. Sharing and selling</h2>
+<p>We do not sell or rent personal information, and we do not collect any ourselves. The third parties that receive technical data from the app are the word service (section 4) and Google AdMob (section 5).</p>
 
-<h2>9. Retention and your rights</h2>
+<h2>10. Retention and your rights</h2>
 <p>We hold no personal data about you, so there is nothing for us to access, correct or delete. Your on-device data is yours to delete at any time by clearing the app's storage or uninstalling it. Depending on where you live (for example the EEA, the UK or California) you may have rights over personal data held by others, such as the word-service operator; you should contact that operator for those requests. You are welcome to email us with any privacy question.</p>
 
-<h2>10. Security</h2>
+<h2>11. Security</h2>
 <p>The daily-word request uses HTTPS. Data saved on your device lives in the app's private storage, which other apps cannot normally read.</p>
 
-<h2>11. Changes to this policy</h2>
+<h2>12. Changes to this policy</h2>
 <p>If we change how the app works in a way that affects privacy, we will update this page and the effective date above, and the new version will apply from the date shown.</p>
 
-<h2>12. Not affiliated</h2>
+<h2>13. Not affiliated</h2>
 <p>Daily Word Guess is an independent game. It is not affiliated with, endorsed by or sponsored by The New York Times Company.</p>
 
-<h2>13. Contact</h2>
-<p>Questions about this policy: <a href="mailto:md.sharik5012@gmail.com">md.sharik5012@gmail.com</a>.</p>
+<h2>14. Contact</h2>
+<p>Questions about this policy: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>.</p>
 </main>
 <footer>
   <div class="wrap foot">
